@@ -1,0 +1,15 @@
+# golang-demo-app Config - DEV
+
+Helm chart for DEV environment.
+
+## Configuration
+
+- **Environment**: DEV
+- **Auto-Deploy**: Yes (via essesseff upon successful code build triggered by source code push)
+- **Namespace**: `essesseff-demo-account`
+
+## Updates
+
+This repository in combination with the argocd-env environment-specific deployment config determine when/if/how deployments occur via Argo CD. This repository is updated by essesseff platform when DEV deployments are to occur as per Developer manual decision and/or subsequent to successful code build typically triggered by source code push.
+
+Typically, only the values.yaml file should be manually altered in order to cause a deployment to occur with updated configuration, while any/all other changes in the repository are made via essesseff deployment orchestration.
