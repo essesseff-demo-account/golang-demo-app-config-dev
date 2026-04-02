@@ -4,7 +4,7 @@ image:
   registry: ghcr.io
   repository: essesseff-demo-account/golang-demo-app
   pullPolicy: Always
-  tag: 1.0.0-8775f52-20260402T031513Z
+  tag: 1.0.1-c5b2ce2-20260402T031834Z
 imagePullSecrets:
   - name: ghcr-credentials
 
@@ -109,7 +109,7 @@ env:
   - name: PORT
     value: "8080"
   - name: VERSION
-    value: "1.0.0-8775f52-20260402T031513Z"
+    value: "1.0.1-c5b2ce2-20260402T031834Z"
 configMap:
   enabled: true
   data:
